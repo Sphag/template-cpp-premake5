@@ -5,18 +5,22 @@ project "lib"
     staticruntime "on"
     systemversion "latest"
     warnings      "extra"
-    pchheader     "Common.hpp"
-    pchsource     "src/Common.cpp"
+    pchheader     "common.hpp"
+    pchsource     "sources/src/common.cpp"
     targetdir     (BIN_DIR)
     objdir        (OBJ_DIR)
     files {
-        -- "src/**.h",
-        -- "src/**.hpp",
-        "src/**.cpp",
+        "sources/src/**.cpp",
+
+        "sources/include/**.h",
+        "sources/include/**.h",
+        
+        "include/lib/**.hpp",
+        "include/lib/**.h",
     }
     includedirs {
         "include/lib",
-        "src/"
+        "sources/include"
     }
     links {
         

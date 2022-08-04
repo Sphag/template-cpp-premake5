@@ -6,7 +6,6 @@ workspace (WORKSPACE_NAME)
         "release"
     }
     platforms {
-        "x86_64",
         "x64"
     }
     filter "configurations:debug"
@@ -21,8 +20,6 @@ workspace (WORKSPACE_NAME)
         runtime  "release"
         symbols  "off"
         optimize "on"
-    filter "platforms:x86_64"
-        architecture "x86_64"
     filter "platforms:x64"
         architecture "x64"
     

@@ -32,8 +32,9 @@ Furthermore, the entries are processed in the order they appear in the table.
 The `projects` folder is intended to contain folders for your projects.
 However, you can put your project folders anywhere; just specify the correct
 paths in `projects.lua`.
-By default, this template includes one library `lib` that is referenced by one
-executable `program`.
+By default, this template includes one library `lib` that is referenced by 
+executable `program` and `program_with_shaders`. Last one contains additional
+rules for compiling `GLSL` shaders.
 They each have their own folder inside the `projects` folder, containing their
 `premake5.lua` script and source code.
 

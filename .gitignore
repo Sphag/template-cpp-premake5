@@ -1,5 +1,5 @@
 # Build output
-_out/
+out/
 
 # Makefiles
 Makefile
